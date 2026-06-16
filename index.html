@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shang Tian | Academic Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Lora:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-title" href="#top">Shang Tian / 田上</a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#publications">Publications</a>
+          <a href="#datasets">Datasets</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="layout" id="top">
+      <aside class="sidebar">
+        <img class="profile-photo" src="./assets/profile.jpeg" alt="Portrait of Shang Tian" />
+        <h1>Shang Tian</h1>
+        <p class="sidebar-role">PhD Student</p>
+        <p class="sidebar-affiliation">Peking University</p>
+        <p class="sidebar-meta">College of Environmental Sciences and Engineering</p>
+        <p class="sidebar-meta">Beijing, China</p>
+
+        <ul class="sidebar-links">
+          <li><a href="mailto:ts_0410@163.com">Email</a></li>
+          <li><a href="https://scholar.google.com/citations?user=MZdgi9EAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a></li>
+          <li><a href="https://orcid.org/0009-0006-9663-4447" target="_blank" rel="noreferrer">ORCID</a></li>
+          <li><a href="https://www.researchgate.net/profile/Shang-Tian-2" target="_blank" rel="noreferrer">ResearchGate</a></li>
+        </ul>
+      </aside>
+
+      <div class="content">
+        <section class="page-section" id="about">
+          <h2>About</h2>
+          <p>
+            I am a PhD candidate at the College of Environmental Sciences and Engineering, Peking University.
+          </p>
+          <p>
+            My research focuses on understanding how river water quality and material transport respond to
+            climate change and human activities. Using satellite remote sensing, machine learning,
+            hydrological data, and spatial analysis, I reconstruct long-term dynamics of suspended
+            sediment, particulate organic carbon, and other water-quality indicators from individual river
+            reaches to regional and global river networks.
+          </p>
+          <p>
+            My current research covers rivers across High Mountain Asia, the pan-Arctic region, China,
+            and the globe. A central goal of my work is to bridge the gap between sparse field
+            observations and large-scale river monitoring, and to better understand the roles of rivers
+            in sediment transport, the land-ocean continuum, and the global carbon cycle.
+          </p>
+
+          <div class="info-block">
+            <h3>Education</h3>
+            <ul class="plain-list">
+              <li><strong>PhD in Environmental Science and Engineering</strong>, Peking University, Beijing, China, 2025-Present</li>
+              <li><strong>MSc</strong>, Nankai University, Tianjin, China, 2020-2023</li>
+              <li><strong>BSc</strong>, Yunnan University, Kunming, China, 2014-2018</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="page-section" id="publications">
+          <h2>Publications</h2>
+          <ol class="publication-list">
+            <li>
+              <strong>Rapid changes in global river particulate organic carbon flux.</strong>
+              <em> Nature Geoscience</em> (2026). In Press.
+            </li>
+            <li>
+              <strong>Increasing river sediment concentration and flux across the pan-Arctic.</strong>
+              <em> Nature Geoscience</em> (2026).
+              <a href="https://doi.org/10.1038/s41561-026-01960-z" target="_blank" rel="noreferrer">https://doi.org/10.1038/s41561-026-01960-z</a>
+            </li>
+            <li>
+              <strong>A novel framework for river organic carbon retrieval through satellite data and machine learning.</strong>
+              <em> ISPRS Journal of Photogrammetry and Remote Sensing</em> (2025).
+              <a href="https://doi.org/10.1016/j.isprsjprs.2025.01.028" target="_blank" rel="noreferrer">https://doi.org/10.1016/j.isprsjprs.2025.01.028</a>
+            </li>
+          </ol>
+        </section>
+
+        <section class="page-section" id="datasets">
+          <h2>Datasets</h2>
+
+          <article class="dataset-entry">
+            <img src="./assets/copper_glacier.jpg" alt="POC dataset figure" />
+            <div class="dataset-copy">
+              <h3>Global River POC (1984-2018)</h3>
+              <p>
+                This dataset provides satellite-constrained annual particulate organic carbon fluxes for
+                2,409 global rivers from 1984 to 2018, together with river-mouth attributes and a web-based
+                visualization interface for exploring long-term changes in riverine carbon export.
+              </p>
+              <p><strong>Dataset website:</strong> <a href="https://qqq196988.github.io/website/" target="_blank" rel="noreferrer">Interactive visualization</a></p>
+              <p><strong>Download:</strong> <a href="https://zenodo.org/records/20337044" target="_blank" rel="noreferrer">Zenodo dataset</a></p>
+              <p><strong>Repository:</strong> <a href="https://github.com/qqq196988/Global-river-POC" target="_blank" rel="noreferrer">GitHub repository</a></p>
+            </div>
+          </article>
+
+          <article class="dataset-entry">
+            <img src="./assets/yukon_delta.png" alt="Arctic SSC dataset figure" />
+            <div class="dataset-copy">
+              <h3>Arctic River SSC (1984-2023)</h3>
+              <p>
+                This dataset provides reach-scale suspended sediment concentration records for 4,331 river
+                reaches across the pan-Arctic region. The visualization groups mean SSC into 8 quantile
+                classes and links mapped reaches with 5-year SSC time series from 1984-1988 to 2019-2023.
+              </p>
+              <p><strong>Dataset website:</strong> <a href="./arctic-ssc/" target="_blank" rel="noreferrer">Interactive visualization</a></p>
+              <p><strong>Download:</strong> <a href="https://zenodo.org/records/17608897" target="_blank" rel="noreferrer">Zenodo dataset</a></p>
+              <p><strong>Paper:</strong> <a href="https://doi.org/10.1038/s41561-026-01960-z" target="_blank" rel="noreferrer">Nature Geoscience</a></p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <script src="./site.js"></script>
+  </body>
+</html>
