@@ -20,6 +20,7 @@ body {
   font-family: "Source Sans 3", sans-serif;
   color: var(--ink);
   background: var(--bg);
+  overflow: hidden;
 }
 
 a {
@@ -34,6 +35,11 @@ a:hover {
 .site-header {
   background: var(--paper);
   border-bottom: 1px solid var(--line);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
 }
 
 .site-header__inner {
@@ -60,6 +66,9 @@ a:hover {
 }
 
 .main-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   color: var(--muted);
   font-size: 1rem;
 }
@@ -71,15 +80,18 @@ a:hover {
 
 .layout {
   max-width: 1180px;
-  margin: 0 auto;
-  padding: 28px 24px 72px;
+  height: calc(100vh - 74px);
+  margin: 74px auto 0;
+  padding: 30px 24px 28px;
   display: grid;
   grid-template-columns: 270px minmax(0, 1fr);
   gap: 40px;
+  overflow: hidden;
 }
 
 .sidebar {
   align-self: start;
+  height: fit-content;
 }
 
 .profile-photo {
@@ -122,8 +134,44 @@ a:hover {
   margin-bottom: 8px;
 }
 
+.sidebar-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-icon,
+.link-icon,
+.section-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.nav-icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.link-icon {
+  width: 16px;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.section-icon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
 .content {
   min-width: 0;
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 6px;
 }
 
 .page-section {
@@ -198,9 +246,30 @@ a:hover {
 }
 
 @media (max-width: 960px) {
+  body {
+    overflow: auto;
+  }
+
+  .site-header {
+    position: sticky;
+  }
+
   .layout {
+    height: auto;
+    margin-top: 0;
     grid-template-columns: 1fr;
     gap: 24px;
+    overflow: visible;
+  }
+
+  .sidebar {
+    height: auto;
+  }
+
+  .content {
+    height: auto;
+    overflow: visible;
+    padding-right: 0;
   }
 }
 
