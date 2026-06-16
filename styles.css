@@ -87,7 +87,7 @@ a:hover {
   max-width: 160px;
   border-radius: 4px;
   display: block;
-  margin: 0 auto;
+  margin: 0 0 0 0;
 }
 
 .sidebar h1,
